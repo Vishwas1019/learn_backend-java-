@@ -38,6 +38,7 @@ public class UserServiceImpl implements UserService{
 		return userRepository.findAll();
 	}
 
+
 	@Override
 	public UserResponse updateUser(int id, UserRequest userReq) {
 		Optional<User> optionalUser = userRepository.findById(id);
