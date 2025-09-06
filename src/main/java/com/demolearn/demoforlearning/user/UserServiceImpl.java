@@ -40,7 +40,6 @@ public class UserServiceImpl implements UserService{
 
 	@Override
 	public UserResponse updateUser(int id, UserRequest userReq) {
-		// TODO Auto-generated method stub
 		Optional<User> optionalUser = userRepository.findById(id);
 		logger.info("loger id: {}", optionalUser.get());
 		if(optionalUser.isEmpty()) {
