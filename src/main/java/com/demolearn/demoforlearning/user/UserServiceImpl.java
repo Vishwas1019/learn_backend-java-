@@ -24,7 +24,6 @@ public class UserServiceImpl implements UserService{
 	@Override
 	public UserResponse addUser(UserRequest userReq) {
 		
-		// TODO Auto-generated method stub
 		logger.info("userReq values: {}", userReq);
 		User user = User.fromRequest(userReq);
 		logger.info("userReq from request values: {}", userReq);
@@ -36,7 +35,6 @@ public class UserServiceImpl implements UserService{
 
 	@Override
 	public List<User> allUsers() {
-		// TODO Auto-generated method stub
 		return userRepository.findAll();
 	}
 
