@@ -48,6 +48,7 @@ public class UserServiceImpl implements UserService{
 		}
 		User user = optionalUser.get();
 		user.updateUser(userReq);
+
 		logger.info("loger UserReq: {}", userReq);
 		User updatedUser = userRepository.save(user);
 		return updatedUser.toResponse();
