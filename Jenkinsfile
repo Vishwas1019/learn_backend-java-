@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven 3.9.6' // Jenkins में configured Maven का नाम
+        maven 'M3'
     }
 
     stages {
